@@ -221,8 +221,8 @@ if ( "webkitIndexedDB" in window ) {
 	window.IDBTransaction = window.webkitIDBTransaction;
 	window.IDBTransaction = window.webkitIDBTransaction;
 	window.IDBKeyRange    = window.webkitIDBKeyRange;
-} else if ( "moz_indexedDB" in window ) {
-	window.indexedDB = window.moz_indexedDB;
+} else if ( "mozIndexedDB" in window ) {
+	window.indexedDB = window.mozIndexedDB;
 }
 if ( !window.indexedDB ) {
 	// Browser doesn’t support indexedDB, do something
